@@ -25,8 +25,8 @@ describe('Pages Tests', function () {
     const $ = cheerio.load(response.text);
     // Verify form and input fields with button
     expect($('form')).to.have.length(1);
-    expect($('input[name="login"]')).to.have.length(1);
-    expect($('input[name="password"]')).to.have.length(1);
+    expect($('input[id="field-login"]')).to.have.length(1);
+    expect($('input[id="field-pasw"]')).to.have.length(1);
     expect($('button[class="submit"]')).to.have.length(1);
   });
 
